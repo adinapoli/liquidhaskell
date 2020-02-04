@@ -10,6 +10,10 @@ commands:
       - run: apt-get update && apt-get install -y z3 git ssh
       - run: git submodule sync
       - run: git submodule update --init
+  install_cabal_3_0:
+    description: "Install Cabal 3.0"
+    steps:
+      - run: cabal install cabal-install-3.0.0.0
 
 jobs:
   stack:
@@ -54,6 +58,7 @@ jobs:
       - image: haskell:8.6.5
     steps:
       - setup_project
+      - install_cabal_3_0
       - restore_cache:
           keys:
             - cabal-{{ checksum "liquidhaskell.cabal" }}
