@@ -5,6 +5,7 @@ extra-package-dbs: []
 ghc-options:
   hscolour: -w
 packages:
+- liquidhaskell-specs
 - liquid-fixpoint
 - .
 extra-deps:

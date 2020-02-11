@@ -199,7 +199,7 @@ library
                     , vector               >= 0.10
   default-language:   Haskell98
   default-extensions: PatternGuards
-  ghc-options:        -W -fwarn-missing-signatures
+  ghc-options:        -W -fwarn-missing-signatures 
 
   if flag(include)
     hs-source-dirs: devel
