@@ -2,7 +2,7 @@
 --  http://cabal.readthedocs.io/en/latest/nix-local-build-overview.html
 
 packages: .
-          ./liquidhaskell-specs
+          ./liquid-prelude
           ./liquid-fixpoint
 
 package liquid-fixpoint

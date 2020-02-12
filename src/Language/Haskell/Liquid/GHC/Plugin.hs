@@ -102,7 +102,7 @@ specEnvRef = unsafePerformIO $ newIORef (SpecEnv mempty mempty)
 
 -- | Set to 'True' to enable debug logging.
 debugLogs :: Bool
-debugLogs = False
+debugLogs = True
 
 ---------------------------------------------------------------------------------
 -- | Useful functions -----------------------------------------------------------
