@@ -224,6 +224,8 @@ library
                     , transformers         >= 0.3
                     , unordered-containers >= 0.2
                     , vector               >= 0.10
+                    -- To be decided
+                    , optics               >= 0.2
   default-language:   Haskell98
   default-extensions: PatternGuards
   ghc-options:        -W -fwarn-missing-signatures
